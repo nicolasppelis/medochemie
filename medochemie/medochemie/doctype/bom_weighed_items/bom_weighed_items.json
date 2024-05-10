@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-12 10:51:12.452640",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "column_break_3",
+  "qty",
+  "uom",
+  "custom_narcotic",
+  "weigh_function",
+  "col_break2",
+  "rate",
+  "weighted_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "BOM Weighted Items",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Name",
+   "options": "BOM Weighted Items",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "non_negative": 1
+  },
+  {
+   "default": "0.000",
+   "fieldname": "weighted_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weighted QTY",
+   "non_negative": 1,
+   "precision": "3"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_narcotic",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Narcotic",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weigh_function",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Weigh Function"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-26 14:18:17.086146",
+ "modified_by": "Administrator",
+ "module": "Medochemie",
+ "name": "BOM Weighed Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

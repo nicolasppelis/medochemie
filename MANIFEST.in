@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include medochemie *.css
+recursive-include medochemie *.csv
+recursive-include medochemie *.html
+recursive-include medochemie *.ico
+recursive-include medochemie *.js
+recursive-include medochemie *.json
+recursive-include medochemie *.md
+recursive-include medochemie *.png
+recursive-include medochemie *.py
+recursive-include medochemie *.svg
+recursive-include medochemie *.txt
+recursive-exclude medochemie *.pyc

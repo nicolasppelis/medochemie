@@ -1,0 +1,11 @@
+span [data-filter="batch_status,=,Blocked"], span [data-filter="batch_status,=,Quarantine"]
+{
+    background: var(--bg-red) !important;
+    color: var(--text-on-red) !important;
+}
+
+span [data-filter="batch_status,=,Released"]
+{
+    background: var(--bg-green) !important;
+    color: var(--text-on-green) !important;
+}
